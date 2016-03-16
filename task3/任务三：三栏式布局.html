@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>三栏式布局</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		ul{
+			list-style: none;
+		}
+		#box{
+			width: 100%;
+			height: auto;
+			background: #0f3;
+		}
+		.left{
+			background-color: #f9c;
+			width: 160px;
+			margin: 20px;
+			padding: 20px;
+			float: left;
+			border: 2px solid #fff;
+			border-radius: 20px;
+		}
+		.left span{
+			color: green;
+			float: right;
+		}
+		
+		.right{
+			background-color: #cff;
+			width: 80px;
+			margin: 20px;
+			padding: 20px;
+			float: right;
+			border: 2px solid #fff;
+			border-radius: 20px;
+		}
+		.right img{
+			width: 80px;
+			height: 80px;
+			
+		}
+		.right span{
+			font-size: 10px;
+			color: green;
+		}
+		.center{
+			border: 1px solid #ccc;
+			height: auto;
+			position: relative;
+			top:20px;
+			margin-bottom: 40px;
+			margin-left: 240px;
+			margin-right: 160px;
+			padding: 20px;
+			background-color: #f90;
+			border: 2px solid #fff;
+			border-radius: 20px;
+		}
+		.center h3{
+			color: green;
+			padding-bottom: 5px; 
+		}
+		.center p{
+			color: #903;
+			padding-bottom: 2px;
+			text-indent: 20px;
+		}
+		.clearfix{
+			*zoom:1;
+		}
+		.clearfix:before,.clearfix:after{
+			display: table;
+			line-height: 0;
+			content: "";
+		}
+		.clearfix:after{
+			clear: both;
+		}
+	</style>
+</head>
+<body>
+	<div id="box">
+		<div class="left">
+			<span>♥前端梦♥</span>
+			<a href=""><img src="logo.png" alt=""></a>
+		</div>
+		<div class="right">
+			<ul>
+				<a href=""><li><img src="1.png" alt=""><span>刘炳男</span></li></a>
+				<a href=""><li><img src="2.png" alt=""><span>王胜宇</span></li></a>
+				<a href=""><li><img src="3.png" alt=""><span>孟祥宇</span></li></a>
+				<a href=""><li><img src="4.png" alt=""><span>沈玉强</span></li></a>
+				<a href=""><li><img src="5.png" alt=""><span>刘洋</span></li></a>
+			</ul>
+		</div>
+		
+		<div class="center">
+			<h3>‘前端梦’的描述</h3>
+			<h5>团队名字的由来：</h5> <p>我们是一群热爱前端开发的小伙伴，拥有着同样的梦想，去追求、去实现。前端梦是我们眼前最大的梦想，希望未来我们都会实现我们的前端梦！</p>
+			<h5>团队成员所在学校：</h5><p>哈尔滨理工大学</p>
+			<h5>团队宗旨：</h5><p>团队宗旨：怎能让时光匆匆蹉跎了梦想，开始的路就不叫远方！</p><hr />
+			<h3>前端发展</h3>
+			<p>web前端是一个前途不可限量的行业，首先因为很新，相对于JAVA,C++, C等很新颖，而且有成功的模式（国外），只是国内还不是很重视，但是趋势证明，前端在国内也是需求越来越大。其次是技术的发展，前端的JS已经不是一个当初刚出来处理表单验证的小丑脚本了，相反，已经成为一个主流的编程语言，也不是只在客户端做一些交互上的事情，NodeJs的出项让JS能跻身服务端，甚至JS已经能嵌入到硬件里充当以前汇编语言的角色，总之，前端的未来是不用怀疑的。<br />
+
+			下面说说需要掌握的技术：前端技术发展的很快，其实和大家想象的美工有很大的区别，前端首先需要掌握基本的DIV+CSS布局。HTML5， CSS3等新颖的技术，比较关注原生的javascript，JQ等主流框架不是会用就行，要研究原理，了解一些前端性能优化，还有前端模块化，MVC架构等也是企业级所需要掌握的。nodeJS最好是要学，因为这是前端工程师的提升必杀技。当然需要了解一写服务器端的脚本语言，因为当前的前端行业有很多业务层还是得配合后端做一些事情。总之，前端入门很简单很简单，也许有很多人认为会做了一个页面就是前端工程师，但是前端绝对是这个世界上最难的一个行业，因为涉及的东西太多了，越往后学越觉得寸步难行。所以一定要一步一步扎实的走好每一步，前期工资什么的都是次要的，主要的是跟上技术的变化，不要掉队。
+			</p><br />
+			<hr /><br />
+			<h1>加油！加油！</h1>
+		</div>
+		<div class="clearfix"></div>
+	</div>
+</body>
+</html>
