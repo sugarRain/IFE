@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>定位剧中</title>
+	<style>
+		#box{
+			width: 400px;
+			height: 200px;
+			background-color: #ccc;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			margin-top: -100px;
+			margin-left: -200px;
+			overflow: hidden;
+		}
+		.round1,.round2{
+			width: 100px;
+			height: 100px;
+			background-color: #fc0;
+			border-radius: 50px;
+		}
+		.round1{
+			position: absolute;
+			left: -50px;
+			top: -50px;
+		}
+		.round2{
+			position: absolute;
+			right: -50px;
+			bottom: -50px;
+		}
+	</style>
+</head>
+<body>
+	<div id="box">
+		<div class="round1"></div>
+		<div class="round2"></div>
+	</div>
+</body>
+</html>
